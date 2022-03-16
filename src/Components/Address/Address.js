@@ -34,7 +34,7 @@ function Address() {
             <AiFillLinkedin/>
             <br/>
             
-            <a style={{textDecoration: 'none',color: 'white'}}  href="linkedin.com/in/jatin-sharma-0044b2154"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a style={{textDecoration: 'none',color: 'white'}}  href="https://www.linkedin.com/in/jatin-sharma-0044b2154/"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </Col>
       </Row>
 
