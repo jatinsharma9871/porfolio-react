@@ -9,7 +9,7 @@ import TypeWriter from "../Components/TypeWriter/TypeWriter";
 
 function Home() {
   useEffect(() => {
-    aos.init({duration:3000});
+    aos.init({duration:5000});
   },[]);
   return (
     <div data-aos="fade-right">

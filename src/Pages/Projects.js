@@ -1,9 +1,16 @@
-import React from "react";
+// import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCards from "../Components/ProjectCards/ProjectCards";
+import aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 function Projects() {
+  useEffect(() => {
+    aos.init({duration:5000});
+  },[]);
   return (
+       <div data-aos="fade-right">
     <Container id="projects" fluid className="project-section">
       <Container>
         <h1 className="project-heading">
@@ -51,6 +58,7 @@ function Projects() {
         </Row>
       </Container>
     </Container>
+    </div>
   );
 }
 export default Projects;
