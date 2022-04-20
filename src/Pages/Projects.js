@@ -31,7 +31,7 @@ function Projects() {
               description="YesStyle.com is the first online retailer in Asia to globally distribute a wide range of lifestyle and fashion products from the region."
               tech="Tech-Stacks"
               techD="Html | Javascript | Css "
-              link="https://yesstyle-unit-3-project2-hj1egt87x-jatinsharma9871.vercel.app/"
+              link="https://yestyle-final-jey6ozcg5-jatinsharma9871.vercel.app"
               a="https://github.com/jatinsharma9871/yesstyle-unit-3-project"
             />
           </Col>

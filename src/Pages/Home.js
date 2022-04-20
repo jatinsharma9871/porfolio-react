@@ -1,4 +1,6 @@
-import React from "react";
+import aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import myImg from "../Assets/circleimg.png";
@@ -6,7 +8,11 @@ import SelfIntro from "../Components/SelfIntro/SelfIntro";
 import TypeWriter from "../Components/TypeWriter/TypeWriter";
 
 function Home() {
+  useEffect(() => {
+    aos.init({duration:3000});
+  },[]);
   return (
+    <div data-aos="fade-right">
     <section id="home"> 
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
@@ -37,6 +43,7 @@ function Home() {
       <SelfIntro/>
       
     </section>
+    </div>
   );
 }
 
