@@ -1,22 +1,38 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Projects from "./Pages/Projects";
-import Header from "./Components/Header/Header"
-import Footer from "./Components/Footer/Footer"
-import Contact from "./Pages/Contact"
-import "./style.css";
-function App() {
+import React from 'react';
+import Cover from './components/cover';
+import NavbarComponent from "./components/navbar";
+import About from './components/about';
+import WorkExperience from './components/workExperience';
+import Quote from './components/quote';
+import Projects from './components/projects';
+import Contact from './components/contact';
+import Loading, { loadingListener } from "./components/loader";
 
+const App = () => {
+  React.useEffect(() => {
+    
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    loadingListener();
+  }, [])
   return (
-    <div>
-      <Header />
-      <Home />
+    <div className="app">
+      <Loading/>
+      <NavbarComponent />
+      <Cover />
       <About />
+      <WorkExperience />
+      <Quote />
       <Projects />
       <Contact />
-      <br/>
-      <Footer/>
     </div>
   );
 }
