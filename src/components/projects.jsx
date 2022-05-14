@@ -1,6 +1,6 @@
 import React from "react";
 import CardComponent from "./card-component";
-import Pro1 from "../assets/img/project-1.jpg";
+// import Pro1 from "../assets/img/project-1.jpg";
 import Pro3 from "../assets/img/project-3.jpg";
 import { Fade } from "react-reveal";
 
